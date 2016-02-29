@@ -15,4 +15,4 @@ cp ../public/.* .
 
 git add .
 git commit -am "Travis buld #${$TRAVIS_BUILD_NUMBER} - `date +\"%D %T\"` [ci skip]"
-git push "https://${GH_TOKEN}@${GH_REPOSITORY}" master > /dev/null 2>&1
+git push --force "https://${GH_TOKEN}@${GH_REPOSITORY}" +master > /dev/null 2>&1
