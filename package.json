@@ -5,12 +5,12 @@
   "scripts": {
     "build": "gulp",
     "clean": "rm -rf deploy/ public/",
-    "deploy": "bash .travis.sh",
     "test": "mocha './test/**/*.test.js'",
+    "travis": "bash .travis.sh",
 
     "pretest": "npm run clean",
     "prebuild": "npm run test",
-    "predeploy": "npm run build"
+    "pretravis": "npm run build"
   },
   "repository": {
     "type": "git",

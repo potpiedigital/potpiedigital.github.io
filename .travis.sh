@@ -7,7 +7,7 @@ git clone --quiet --branch=master --single-branch "https://${GH_TOKEN}@${GH_REPO
 cd deploy
 
 git rm -r .
-cp -R ../public/ ./
+cp -R ../public/* .
 
 git config user.name "Travis CI"
 git config user.email "travis@travis-ci.org"
