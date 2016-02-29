@@ -1,0 +1,27 @@
+{
+  "name": "potpiedigital.github.io",
+  "version": "1.0.0",
+  "description": "Pot Pie Digital",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potpiedigital/potpiedigital.github.io.git"
+  },
+  "keywords": [
+    "pot",
+    "pie",
+    "digital"
+  ],
+  "collaborators": [
+    "Ashley Siebels <heyo@ashleysiebels.com> (http://ashleysiebels.com)",
+    "Matt Hayes <matt@mysterycommand.com> (http://mysterycommand.com)",
+    "Mark Hayes <mark.m.hayes1@gmail.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/potpiedigital/potpiedigital.github.io/issues"
+  },
+  "homepage": "https://github.com/potpiedigital/potpiedigital.github.io#readme"
+}
