@@ -12,4 +12,4 @@ env:
     - GH_REPOSITORY: github.com/${TRAVIS_REPO_SLUG}
     - secure: "KaPgCxEasrfr9vrJ6lcS7KtzAOQ/Kj2fkOPCfITXbsGAJPTf1eAS1dQVrMHG5VFVmEiR7cvxTY9Kpr1u/YJPRiqKtSbaUTECRVJKhoA01ZBVpQfOA8GnLsUab5xMxpMEZNi6qImkqCmZOcORVDKF6GFy/IldSO999/D89/gTUv6GeIsGkOcr5fC5XVeEm887IPVysmoqRxfETaGtlLPeYI8z0xDKl4FkfqgLEJ3JfUdyw9uLXh922UMRmgYaE6+UeRheQMjrBRVjmg8Kpe06pjcjNns8BJuBDFcY9rCnhl8/qIRIbreO0D37tFT49ZIP0KfOkRC1lHt4IEzoHDnEF3oxD0vMFB9USD0SednawNwD6H8RW8YQuGO6SeyThbLkLDf+vaHpbKm52Md+Ptp/7usmIY7FWm/PwwLGDNAtOxtCKZxHDF//fXSbEK581YgSidw/heved+68h7rmh4oC8kBqpcCIrXJzpti9y9yAIEaaL2mDi4hkFJCf1uLyqdesKyO+HiOCPrYONqfjWumJowtAGrAYeIpD5MFhzw/fxGa0qrec5uNXTC4ZSWuCirA5Zf3/cgmQa/yy1TLDtC53qrissNOSeuPRPbk3N0HMyfzMRD5ijBXC8B1ECbCp/7ZdhDUKLMtwtQMTPgBm7Yuv/Qucso2fYiAMJpYwkP0drc4="
 after_success:
-    - "./.travis.sh"
+    - "bash ./.travis.sh"
