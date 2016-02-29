@@ -4,7 +4,13 @@
   "description": "Pot Pie Digital",
   "scripts": {
     "build": "gulp",
-    "test": "mocha './test/**/*.test.js'"
+    "clean": "rm -rf deploy/ public/",
+    "deploy": "bash .travis.sh",
+    "test": "mocha './test/**/*.test.js'",
+
+    "pretest": "npm run clean",
+    "prebuild": "npm run test",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
