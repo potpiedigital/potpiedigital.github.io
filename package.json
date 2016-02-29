@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Pot Pie Digital",
   "scripts": {
+    "build": "gulp",
     "test": "mocha './test/**/*.test.js'"
   },
   "repository": {
