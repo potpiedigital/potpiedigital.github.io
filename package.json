@@ -6,11 +6,9 @@
     "build": "gulp",
     "clean": "rm -rf deploy/ public/",
     "test": "mocha './test/**/*.test.js'",
-    "travis": "bash .travis.sh",
 
-    "pretest": "npm run clean",
-    "prebuild": "npm run test",
-    "pretravis": "npm run build"
+    "travis": "bash .travis.sh",
+    "pretravis": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
