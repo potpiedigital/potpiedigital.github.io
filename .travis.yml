@@ -18,7 +18,7 @@ after_success:
     - cp -R ../public/* .
     - cp ../public/.* .
     - git add -f .
-    - git commit -am "[ci skip]"
+    - git commit -am "`date +\"%D %T\"` [ci skip]"
     - git config user.name "Travis CI"
     - git config user.email "travis@travis-ci.org"
     - git push "https://${GH_TOKEN}@${GH_REPOSITORY}" master > /dev/null 2>&1
