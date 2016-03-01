@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Pot Pie Digital",
   "scripts": {
-    "build": "gulp",
+    "build": "NODE_ENV=production webpack --config=config/webpack/build.babel.js && gulp",
     "clean": "rm -rf deploy/ public/",
+    "pretravis": "npm run clean && npm run build",
+    "start": "NODE_ENV=development webpack-dev-server --config=config/webpack/start.babel.js --port=3000 --inline --hot",
     "test": "mocha --compilers=js:babel-register './test/**/*.test.js'",
-    "travis": "bash .travis.sh",
-    "pretravis": "npm run clean && npm run build"
+    "travis": "bash .travis.sh"
   },
   "repository": {
     "type": "git",
@@ -30,12 +31,22 @@
   "homepage": "https://github.com/potpiedigital/potpiedigital.github.io#readme",
   "devDependencies": {
     "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-register": "^6.6.0",
     "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
     "eslint": "^2.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^1.3.0",
-    "mocha": "^2.4.5"
+    "lodash": "^4.5.1",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }
