@@ -12,5 +12,5 @@ export default merge(base, {
         },
     },
 
-    devtool: 'eval-source-map',
+    devtool: '#eval-source-map',
 });

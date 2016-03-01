@@ -4,7 +4,7 @@ import webpack from 'webpack';
 import base from './base.babel';
 
 export default mergeWith(base, {
-    devtool: 'source-map',
+    devtool: '#source-map',
 
     output: {
         path: './public',
