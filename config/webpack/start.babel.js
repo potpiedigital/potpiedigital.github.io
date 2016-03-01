@@ -1,5 +1,3 @@
-'use strict';
-
 import { merge } from 'lodash';
 
 import base from './base.babel';

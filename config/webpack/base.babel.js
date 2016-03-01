@@ -19,7 +19,12 @@ export default {
             },
         }, {
             test: /\.scss$/,
-            loader: ExtractText.extract('style', 'css!sass'),
+            loader: ExtractText.extract('style', 'css!sass?' + JSON.stringify({
+                outputStyle: 'expanded',
+                precision: 9,
+                sourceComments: true,
+                sourceMap: false,
+            })),
         }],
     },
 
