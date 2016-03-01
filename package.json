@@ -5,8 +5,7 @@
   "scripts": {
     "build": "gulp",
     "clean": "rm -rf deploy/ public/",
-    "test": "mocha './test/**/*.test.js'",
-
+    "test": "mocha --compilers=js:babel-register './test/**/*.test.js'",
     "travis": "bash .travis.sh",
     "pretravis": "npm run clean && npm run build"
   },
@@ -32,6 +31,7 @@
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.6.0",
     "chai": "^3.5.0",
     "eslint": "^2.2.0",
     "gulp": "^3.9.1",
