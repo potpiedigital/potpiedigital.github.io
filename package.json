@@ -5,10 +5,10 @@
   "scripts": {
     "build": "NODE_ENV=production webpack --config=config/webpack/build.babel.js && gulp",
     "clean": "rm -rf deploy/ public/",
-    "pretravis": "npm run clean && npm run build",
+    "deploy": "bash ./deploy.sh",
+    "predeploy": "npm run clean && npm run build",
     "start": "NODE_ENV=development webpack-dev-server --config=config/webpack/start.babel.js --port=3000 --inline --hot",
-    "test": "mocha --compilers=js:babel-register './test/**/*.test.js'",
-    "travis": "bash .travis.sh"
+    "test": "mocha --compilers=js:babel-register './test/**/*.test.js'"
   },
   "repository": {
     "type": "git",
