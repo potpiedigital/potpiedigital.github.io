@@ -1,0 +1,20 @@
+@import '../variables';
+
+%fancy-underline {
+    position: relative;
+    text-shadow:
+        0.05em 0 0 $background-color,
+       -0.05em 0 0 $background-color;
+
+    &:hover::before {
+        border-bottom: 2px solid $color;
+        content: '';
+
+        position: absolute;
+        bottom: 3%;
+        left: 0.05em;
+        right: 0.05em;
+
+        z-index: -1;
+    }
+}

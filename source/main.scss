@@ -1,16 +1,8 @@
-$scale: 2;
-
-$color-white: #fff;
-$color-black: #000;
-
-$background-color: $color-white;
-$font-size-h1: 32px * $scale;
-$font-size-h2: 24px * $scale;
-$line-height-h: 1.1;
+@import './styles/variables';
 
 html,
 body,
-main {
+.main {
     height: 100%;
     width: 100%;
 }
@@ -28,62 +20,16 @@ body {
     margin: 0;
 }
 
-main {
+.main {
     align-items: center;
     display: flex;
 }
 
-header {
-    margin: 0 auto;
-    text-align: center;
-}
-
 a {
-    color: $color-black;
+    color: $color;
     display: block;
     text-decoration: none;
 }
 
-h1,
-h2 { margin: 0; }
-
-h1 {
-    font-size: $font-size-h1;
-    line-height: $line-height-h;
-
-    > b,
-    > i {
-        display: inline-block;
-
-        &:hover {
-            transform: scale(1.35);
-            z-index: 1;
-        }
-    }
-}
-
-%underline {
-    position: relative;
-    text-shadow:
-        0.05em 0 0 $background-color,
-       -0.05em 0 0 $background-color;
-
-    &:hover::before {
-        border-bottom: 2px solid $color-black;
-        content: '';
-
-        position: absolute;
-        bottom: 3%;
-        left: 0.05em;
-        right: 0.05em;
-
-        z-index: -1;
-    }
-}
-
-h2 {
-    font-size: $font-size-h2;
-    line-height: $line-height-h;
-
-    @extend %underline;
-}
+@import './styles/header';
+@import './styles/footer';

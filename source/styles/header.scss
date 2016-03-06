@@ -1,0 +1,32 @@
+@import './variables';
+@import './placeholders/fancy-underline';
+
+.logotype {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.potpie,
+.digital { margin: 0; }
+
+.potpie {
+    font-size: $font-size-h1;
+    line-height: $line-height-h;
+
+    > b,
+    > i {
+        display: inline-block;
+
+        &:hover {
+            transform: scale(1.35);
+            z-index: 1;
+        }
+    }
+}
+
+.digital {
+    font-size: $font-size-h2;
+    line-height: $line-height-h;
+
+    @extend %fancy-underline;
+}
