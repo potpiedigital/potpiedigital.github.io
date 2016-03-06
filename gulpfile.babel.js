@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import ghtmlmin from 'gulp-htmlmin';
 
-gulp.task('default', () => {
+gulp.task('html', () => {
     return gulp.src(['source/*.html'])
         .pipe(ghtmlmin({
             removeComments: true,
@@ -13,4 +13,11 @@ gulp.task('default', () => {
             quoteCharacter: '"',
         }))
         .pipe(gulp.dest('public'));
-})
+});
+
+gulp.task('txt', () => {
+    return gulp.src(['source/*.txt'])
+        .pipe(gulp.dest('public'));
+});
+
+gulp.task('default', ['html', 'txt']);
