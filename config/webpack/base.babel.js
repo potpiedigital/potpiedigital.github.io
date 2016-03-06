@@ -19,11 +19,11 @@ export default {
             },
         }, {
             test: /\.scss$/,
-            loader: ExtractText.extract('style', 'css!sass?' + JSON.stringify({
+            loader: ExtractText.extract('style', 'css?root=.&sourceMap!sass?' + JSON.stringify({
                 outputStyle: 'expanded',
                 precision: 9,
                 sourceComments: true,
-                sourceMap: false,
+                sourceMap: true,
             })),
         }],
     },
