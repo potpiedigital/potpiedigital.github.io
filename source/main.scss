@@ -23,11 +23,12 @@ body {
 .main {
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
 a {
     color: $color;
-    display: block;
+    display: inline-block;
     text-decoration: none;
 }
 
