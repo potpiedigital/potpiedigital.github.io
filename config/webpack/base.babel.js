@@ -6,6 +6,7 @@ import ExtractText from 'extract-text-webpack-plugin';
 export default {
     entry: {
         main: './source/main.js',
+        'projects/clock/main': './source/projects/clock/main.js',
     },
 
     module: {
