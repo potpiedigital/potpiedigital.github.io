@@ -1,8 +1,8 @@
 const main = document.getElementById('main');
 
-let seconds = 0;
-let minutes = 0;
-let hours = 0;
+let seconds = '0';
+let minutes = '0';
+let hours = '0';
 
 setInterval(function () {
     seconds++;
@@ -12,6 +12,9 @@ setInterval(function () {
         if (minutes >= 60) {
             hours++;
             minutes = 0;
+        }
+        if (minutes < 10) {
+            minutes = '0 + minutes';
         }
     }
     main.innerText = hours + ':' + minutes + ':' + seconds;
