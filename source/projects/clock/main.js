@@ -14,8 +14,11 @@ setInterval(function () {
             minutes = 0;
         }
         if (minutes < 10) {
-            minutes = '0 + minutes';
+            minutes = 0 + minutes;
         }
     }
+    // else if (minutes < 10) {
+         // minutes = 0 + minutes;
+     // }
     main.innerText = hours + ':' + minutes + ':' + seconds;
 }, 1000);
