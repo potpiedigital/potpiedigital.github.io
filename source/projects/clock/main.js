@@ -5,6 +5,10 @@ let minutes = 0;
 let hours = 0;
 
 setInterval(function () {
+    // seconds.toString();
+        // if (seconds < 10) {
+            // seconds = '0 + seconds';
+        // }
     seconds++;
     if (seconds >= 60) {
         minutes++;
@@ -25,13 +29,9 @@ setInterval(function () {
     main.innerText = hours + ':' + minutes + ':' + seconds;
 }, 1000);
 
-let x = 2;
-let y = 3;
-let z = 4;
-console.log('five is ' + (x+y) + ' and not ' + (2* x+y));
-function stingDisplay(argument) {
+function stingDisplay(convert) {
     // body...
-    console.log(x.toString())
+    console.log(seconds.toString())
 }
 
 
