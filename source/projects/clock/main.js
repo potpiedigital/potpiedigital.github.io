@@ -6,7 +6,7 @@ let hours = 0;
 
 setInterval(function () {
     if (seconds < 10)
-    console.log(seconds.toString() + 0);
+    console.log(0 + seconds.toString());
         // if (seconds < 10) {
             // seconds = '0 + seconds';
         // }
