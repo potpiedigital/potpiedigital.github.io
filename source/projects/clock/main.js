@@ -5,7 +5,8 @@ let minutes = 0;
 let hours = 0;
 
 setInterval(function () {
-    // seconds.toString();
+    if (seconds < 10)
+    console.log(seconds.toString() + 0);
         // if (seconds < 10) {
             // seconds = '0 + seconds';
         // }
@@ -29,7 +30,7 @@ setInterval(function () {
     main.innerText = hours + ':' + minutes + ':' + seconds;
 }, 1000);
 
-function stingDisplay(convert) {
+function stingDisplay() {
     // body...
     console.log(seconds.toString())
 }
