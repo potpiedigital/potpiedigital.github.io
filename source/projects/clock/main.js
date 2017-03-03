@@ -1,38 +1,18 @@
-const main = document.getElementById('main');
 
-let seconds = 0;
-let minutes = 0;
-let hours = 0;
-
-setInterval(function () {
-    if (seconds < 10)
-        console.log(0 + seconds.toString());
-        // if (seconds < 10) {
-            // seconds = '0 + seconds';
-        // }
-    seconds++;
-    if (seconds >= 60) {
-        minutes++;
-        seconds = 0;
-        if (minutes >= 60) {
-            hours++;
-            minutes = 0;
-        }
-        if (minutes < 10) {
-            minutes = 0 + minutes;
-        }
+// testing functions
+function assert(condition, message) {
+    if (!condition) {
+        console.log(message);
     }
-     // else if (minutes < 10) {
-        // minutes = '0' + minutes;
-     // }
-     // console.log(seconds.toString());
-
-    main.innerText = hours + ':' + minutes + ':' + seconds;
-}, 1000);
-
-function stingDisplay() {
-    // body...
-    console.log(seconds.toString())
 }
 
-
+// assert (true===true, 'condition should be true');
+// assert (true===false, 'true should not equal false');
+function numberAsString(num) {
+    if (num < 10) {
+        return '0' + num.toString();
+    }
+    return num.toString();
+}
+assert(numberAsString(2)==='02', 'numberAsString(2) should return \'02\'');
+assert(numberAsString(10)==='10', 'numberAsString(10) should return \'10\'');
