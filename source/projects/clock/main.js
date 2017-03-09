@@ -95,7 +95,7 @@ setInterval(function () {
         minutes=0;
     }
     minutes.innerText = numberAsString(minutes) + ':';
-},1000);
+},1);
 
 // Hours
 const mainHours = document.getElementById('hours');
@@ -114,6 +114,6 @@ setInterval(function () {
     if (hours>=13){
         hours = hours - 12;
     }
-    main.innerText = numberAsString(hours) + ':';
-},1000);
+    main.innerText = numberAsString(hours) + ':' + numberAsString(minutes) + ':' + numberAsString(seconds);
+},1);
 
