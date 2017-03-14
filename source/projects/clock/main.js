@@ -69,7 +69,7 @@ setInterval(function () {
     // if (hours>=13){
     //     hours = hours - 12;
     // }
-    main.innerText = ':' + numberAsString(seconds);
+    seconds,main.innerText = ':' + numberAsString(seconds);
 },1000);
 
 // minutes
@@ -94,8 +94,8 @@ setInterval(function () {
         hours++;
         minutes=0;
     }
-    minutes.innerText = numberAsString(minutes) + ':';
-},1);
+    minutes,main.innerText = numberAsString(minutes) + ':';
+},60000);
 
 // Hours
 const mainHours = document.getElementById('hours');
@@ -114,6 +114,7 @@ setInterval(function () {
     if (hours>=13){
         hours = hours - 12;
     }
-    main.innerText = numberAsString(hours) + ':' + numberAsString(minutes) + ':' + numberAsString(seconds);
-},1);
+    hours,main.innerText = numberAsString(hours);
+    // main.innerText = numberAsString(hours) + ':' + numberAsString(minutes) + ':' + numberAsString(seconds);
+},3.6e+6);
 
