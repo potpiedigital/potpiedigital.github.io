@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+h4 {
+   font-size: 3vw;
+   margin-bottom: 0;
+}
+
 header {
     background-image: url("./assets/header_bacground.png");
     background-position: center;
@@ -93,6 +98,7 @@ section {
 .marky {
     display: flex;
     align-items: center;
+    margin: 5% auto;
 }
 
 hr {
@@ -130,10 +136,47 @@ hr {
     width: 25vw;
     height: 25vw;
     max-width: 100%;
-    margin-right: 2vw;
-    flex-basis: 20%;
+    margin-right: 5%;
 }
 
 .my-info > p {
     flex-basis: 60%
 }
+
+.why-ppd {
+    width: 100%;
+    background-color: #D8D8D8;
+    margin: 5% 0;
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+.why-ppd > div {
+    width: 60%;
+    margin: 0 0 0 10%;
+    float: left;
+}
+
+.why-ppd > div:nth-child(2) {
+    width: 60%;
+    margin: 0 0 0 30%;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
