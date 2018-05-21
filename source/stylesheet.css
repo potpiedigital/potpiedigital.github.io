@@ -75,3 +75,65 @@ li > a:hover {
     border: 1px solid #ffffff;
     padding: .5vw;
 }
+
+.call-to-action > a:hover {
+    background-color: #E70A0A;
+    border-color: #E70A0A;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+.about-me {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.marky {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    flex: 0 0 100%;
+}
+
+.big-line,
+.small-line {
+    height: 10px;
+    background-color: #E70A0A;
+    border: 0 none;
+}
+
+.big-line {
+    flex-basis: 50%;
+}
+
+.small-line {
+    flex-basis: 20%;
+}
+
+.title {
+    flex-basis: 30%;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.my-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-info > img {
+    width: 25vw;
+    height: 25vw;
+    max-width: 100%;
+    margin-right: 2vw;
+    flex-basis: 20%;
+}
+
+.my-info > p {
+    flex-basis: 60%
+}
