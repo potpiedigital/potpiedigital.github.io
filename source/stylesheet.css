@@ -11,7 +11,7 @@ body {
 
 h4 {
    font-size: 3vw;
-   margin-bottom: 0;
+   margin: 0;
 }
 
 header {
@@ -95,7 +95,7 @@ section {
     margin: 0 auto;
 }
 
-.marky {
+.line-break {
     display: flex;
     align-items: center;
     margin: 5% auto;
@@ -122,6 +122,7 @@ hr {
 
 .title {
     flex-basis: 30%;
+    text-transform: uppercase;
     text-align: center;
     font-size: 3vw;
     margin: 0;
@@ -153,15 +154,63 @@ hr {
 
 .why-ppd > div {
     width: 60%;
-    margin: 0 0 0 10%;
+    margin: 5% 0 0 10%;
     float: left;
 }
 
 .why-ppd > div:nth-child(2) {
     width: 60%;
-    margin: 0 0 0 30%;
+    margin: 5% 0 0 30%;
     float: left;
 }
+
+.projects {
+    padding-bottom: 5%;
+}
+
+.clients {
+    display: flex;
+    justify-content: space-around;
+}
+
+.clients > a > img {
+    width: 100%;
+    height: auto;
+    flex-basis: 20%;
+    box-shadow: 1px 2px 4px #000000;
+}
+
+.clients > a:hover {
+}
+
+.email-me {
+    width: 100%;
+    background-color: #D8D8D8;
+    /*margin: 5% 0;*/
+    padding-bottom: 5%;
+}
+
+.email-me > div {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.black-button {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    border: 1px solid #000000;
+    padding: .5vw;
+}
+
+
+
+
+
+
 
 
 
