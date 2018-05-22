@@ -9,6 +9,18 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya', serif;
+}
+
+p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
 h2 {
     text-transform: uppercase;
     text-align: center;
@@ -38,12 +50,13 @@ header > h1, .slogan {
 
 header > h1 {
     margin: 5vw auto 0;
-    font-size: 5vw;
+    font-size: 9vw;
 }
 
 header > h2 {
-    font-size: 4vw;
-    margin-top: 0;
+    font-size: 5.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -2%;
 }
 
 header > a {
@@ -64,11 +77,11 @@ nav > ul {
 li > a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 2vw;
 }
 
 li > a:hover {
-    color: #E70A0A;
-    text-decoration: underline;
+    text-decoration: underline #E70A0A;
 }
 
 .call-to-action {
@@ -144,15 +157,17 @@ hr {
     height: 25vw;
     max-width: 100%;
     margin-right: 5%;
+    box-shadow: 1px 2px 4px #000000;
 }
 
 .my-info > p {
     flex-basis: 60%
+    margin: 0;
 }
 
 .why-ppd {
     width: 100%;
-    background-color: #D8D8D8;
+    background-color: #E8E8E8;
     margin: 5% 0;
     padding-bottom: 5%;
     overflow: hidden;
@@ -178,6 +193,7 @@ hr {
 .clients {
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
 .clients > a > img {
@@ -187,13 +203,73 @@ hr {
     box-shadow: 1px 2px 4px #000000;
 }
 
-.clients > a:hover {
+  /*transition code */
+
+.card {
+   /* position: absolute;
+    top: 50%;
+    left: 0;*/
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 314px;
+    background: #262626;
+    overflow: hidden;
 }
+
+.card > .img-bx,
+.card > .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.card > .img-bx {
+    top: 0;
+    left: 0;
+}
+
+.card:hover > .img-bx {
+    top: 0;
+    left: -100%;
+}
+
+.card > .img-bx > img {
+    width: 100%;
+}
+
+.card > .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+
+.card:hover > .details {
+    top: 0;
+    left: 0;
+}
+
+.card > .details > h2 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.card > .details > p {
+    color: #ffffff;
+    margin: 20px 0 0;
+}
+
+ /*end transition code*/
 
 .email-me {
     width: 100%;
-    background-color: #D8D8D8;
-    /*margin: 5% 0;*/
+    background-color: #E8E8E8;
+    margin: 5% 0;
     padding-bottom: 5%;
 }
 
