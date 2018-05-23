@@ -197,18 +197,24 @@ hr {
 }
 
 .clients > div {
-    flex: 0 0 45%;
-    margin: 1% 2%;
-    background-color: pink;
+    flex: 0 0 44%;
+    margin: 2% 5% 5% 1%;
+    /*background-color: pink;*/
 }
 
 .clients > div > img {
     box-shadow: 1px 2px 4px #000000;
+    float: left;
+    margin-right: 1em;
 }
 
-.details > p {
-    font-size: .9em;
-    width: 50%;
+.clients > div > h5 {
+    font-size: 2vw;
+    margin: 0;
+}
+.clients > div > p {
+    font-size: 1.25vw;
+    margin: 5% 0;
 }
 
   /*transition code */
