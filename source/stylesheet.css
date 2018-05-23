@@ -190,16 +190,20 @@ hr {
     padding-bottom: 5%;
 }
 
+.projects {
+    height: 10em;
+}
+
 .clients {
-    /*display: flex;
-    justify-content: space-around;*/
-    width: 100%;
+    width: 80%;
+    height: 10em;
+    text-align: center;
+    margin: 2em auto;
 }
 
   /*transition code */
 
 .card {
-    /*flex-basis: auto;*/
     float: left;
     margin: 0 1em;
     transform: translate(-50%, -50%);
@@ -256,16 +260,23 @@ hr {
 
 .card > .details > p {
     color: #ffffff;
+    text-align: left;
     font-size: .9em;
     margin: 20px 0 20px 0;
 }
 .card > .details > a {
     color: #ffffff;
+    text-decoration: none;
     font-size: 1em;
     text-align: center;
-    margin-left: 3em;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 5px;
     border: 1px solid #fff;
+}
+
+.card > .details > a:hover {
+    background-color: #E70A0A;
+    border-color: #E70A0A;
 }
 
  /*end transition code*/
