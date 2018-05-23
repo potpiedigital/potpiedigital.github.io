@@ -191,29 +191,23 @@ hr {
 }
 
 .clients {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-}
-
-.clients > a > img {
+    /*display: flex;
+    justify-content: space-around;*/
     width: 100%;
-    height: auto;
-    flex-basis: 20%;
-    box-shadow: 1px 2px 4px #000000;
 }
 
   /*transition code */
 
 .card {
-   /* position: absolute;
-    top: 50%;
-    left: 0;*/
+    /*flex-basis: auto;*/
+    float: left;
+    margin: 0 1em;
     transform: translate(-50%, -50%);
     width: 220px;
     height: 314px;
     background: #262626;
     overflow: hidden;
+    box-shadow: 1px 2px 4px #000000;
 }
 
 .card > .img-bx,
@@ -243,16 +237,17 @@ hr {
     background: #262626;
     top: 0;
     left: 100%;
-    padding: 60px 30px;
+    padding: 20px 10px;
 }
 
 .card:hover > .details {
-    top: 0;
     left: 0;
+    padding: 1em;
 }
 
 .card > .details > h2 {
     color: #ffffff;
+    font-size: 1em;
     text-align: center;
     margin: 0;
     padding: 0 0 10px;
@@ -261,7 +256,16 @@ hr {
 
 .card > .details > p {
     color: #ffffff;
-    margin: 20px 0 0;
+    font-size: .9em;
+    margin: 20px 0 20px 0;
+}
+.card > .details > a {
+    color: #ffffff;
+    font-size: 1em;
+    text-align: center;
+    margin-left: 3em;
+    padding: 10px;
+    border: 1px solid #fff;
 }
 
  /*end transition code*/
