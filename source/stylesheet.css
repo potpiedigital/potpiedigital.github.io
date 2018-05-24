@@ -364,7 +364,24 @@ footer > nav {
     margin-bottom: 5%;
 }
 
+/*  resume page  */
 
+.basic-bio {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basic-bio p {
+    padding: 0 0 0 10%;
+}
+
+.basic-bio img {
+    width: 25%;
+    height: auto;
+}
 
 
 
