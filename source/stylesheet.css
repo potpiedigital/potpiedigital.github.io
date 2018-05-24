@@ -24,11 +24,11 @@ p {
 h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 3vw;
+    font-size: 1.75em;
 }
 
 h4 {
-   font-size: 3vw;
+   font-size: 1.5em;
    margin: 0;
 }
 
@@ -141,7 +141,7 @@ hr {
 }
 
 .big-line {
-    flex: 1 1 60%;
+    flex: 1 1 55%;
 }
 
 .small-line {
@@ -391,7 +391,6 @@ footer > nav {
 }
 
 .basic-bio > div {
-    /*width: 60%;*/
     padding: 0 0 0 10%;
 }
 
@@ -441,6 +440,21 @@ ul > h4 {
     flex: 1 0 80%;
 }
 
+@media screen and (max-width: 1060px) {
+.big-line {
+    flex: 1 1 55%;
+}
+
+.small-line {
+    flex: 1 1 10%;
+}
+
+.title {
+    flex: 1 1 25%;
+    font-size: 1.5em;
+}
+}
+
 @media screen and (max-width: 776px) {
     li > a {
         font-size: 1em;
@@ -463,12 +477,20 @@ ul > h4 {
     .family-man > p {
         margin-top: 2%;
     }
-
-    .find-us > .line-break > .big-line {
-        flex-basis: 40%
+    .why-ppd {
+        text-align: center;
+        display: block;
     }
-    .find-us > .line-break > .title{
-        flex-basis: 60%;
+
+    .why-ppd > div,
+    .why-ppd > div:nth-child(2) {
+        margin: 3% auto 0;
+        float: none;
+    }
+
+    .why-ppd > div > h4,
+    .email-me > div > h4  {
+        font-size: 1.5em;
     }
     .find-us-content {
         display: block;
@@ -494,7 +516,12 @@ ul > h4 {
         margin: 0 0 0 5%;*/
         width: 90%;
     }
-
+    .title {
+        flex: 1 1 30%;
+    }
+    .big-line {
+        flex: 1 1 40%;
+    }
 
 /*  resume page  */
     .basic-bio,
@@ -537,7 +564,25 @@ ul > h4 {
     }
 }
 
+@media screen and (max-width: 550px){
+    .big-line,
+    .small-line {
+        flex: 1 1 25%;
+    }
+    .title {
+        flex: 1 1 40%;
+    }
+}
+
 @media screen and (max-width: 465px) {
+
+    .big-line,
+    .small-line {
+        flex: 1 1 15%;
+    }
+    .title {
+        flex: 1 1 60%;
+    }
 
 /*  resume page  */
     .basic-bio,
