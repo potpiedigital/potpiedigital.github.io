@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Alegreya', serif;
 }
 
-p, a {
+p, a, li {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -366,15 +366,19 @@ footer > nav {
 
 /*  resume page  */
 
-.basic-bio {
+.basic-bio,
+.tech,
+.web-projects,
+.hobbies {
     width: 80%;
     margin: 5% auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.basic-bio p {
+.basic-bio > div {
+    /*width: 60%;*/
     padding: 0 0 0 10%;
 }
 
@@ -382,6 +386,44 @@ footer > nav {
     width: 25%;
     height: auto;
 }
+
+.nerd-stuff {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 80%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > h4 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 25vw;
+}
+
+.tech h3,
+.web-projects h3,
+.hobbies h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    flex: 1 0 30%;
+}
+
+.web-projects > div > p {
+    margin-top: 0;
+}
+
+.web-projects > div {
+    flex: 1 0 80%;
+}
+
 
 
 
