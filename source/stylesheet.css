@@ -387,6 +387,10 @@ footer > nav {
     padding: 0 0 0 10%;
 }
 
+.basic-bio > div > p {
+    margin-top: 0;
+}
+
 .basic-bio img {
     width: 25%;
     height: auto;
@@ -475,7 +479,6 @@ ul > h4 {
     .basic-bio > div > p,
     .web-projects > div > p {
         font-size: 1.15em;
-        margin-top: 0;
     }
     .basic-bio > div > p:nth-child(2) {
         display: none;
@@ -515,15 +518,6 @@ ul > h4 {
         margin: 1% auto;
         width: 100%;
     }
-    /*footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-    footer > nav > ul {
-        display: block;
-        text-align: left;
-    }*/
 }
 
 
