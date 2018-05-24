@@ -161,17 +161,13 @@ hr {
     justify-content: space-between;
 }
 
-.my-info > picture {
-    /*width: 25vw;
-    height: 25vw;*/
+.my-info > img {
+    width: 25vw;
+    height: 25vw;
+    max-width: 100%;
     margin-right: 5%;
-    object-fit: contain;
-    /*box-shadow: 1px 2px 4px #000000;*/
+    box-shadow: 1px 2px 4px #000000;
 }
-
-/*picture > img {
-    object-fit: contain;
-}*/
 
 .my-info > p {
     flex-basis: 60%
