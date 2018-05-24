@@ -158,16 +158,20 @@ hr {
 
 .my-info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.my-info > img {
-    width: 25vw;
-    height: 25vw;
-    max-width: 100%;
+.my-info > picture {
+    /*width: 25vw;
+    height: 25vw;*/
     margin-right: 5%;
-    box-shadow: 1px 2px 4px #000000;
+    object-fit: contain;
+    /*box-shadow: 1px 2px 4px #000000;*/
 }
+
+/*picture > img {
+    object-fit: contain;
+}*/
 
 .my-info > p {
     flex-basis: 60%
@@ -478,14 +482,19 @@ ul > h4 {
         margin-top: 2%;
     }
     .why-ppd {
-        text-align: center;
         display: block;
     }
-
-    .why-ppd > div,
+    .why-ppd > div {
+        margin: 3% auto 5%;
+    }
     .why-ppd > div:nth-child(2) {
         margin: 3% auto 0;
+    }
+    .why-ppd > div,
+    .why-ppd > div:nth-child(2),
+    .email-me > div {
         float: none;
+        width: 80%;
     }
 
     .why-ppd > div > h4,
