@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Alegreya', serif;
 }
 
-p, a, li {
+p, a, li, address {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -169,6 +169,13 @@ hr {
     box-shadow: 1px 2px 4px #000000;
 }
 
+.my-info > .display766{
+    display: none;
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 5%;
+}
+
 .my-info > p {
     flex-basis: 60%
     margin: 0;
@@ -214,14 +221,20 @@ hr {
     box-shadow: 1px 2px 4px #000000;
     float: left;
     margin-right: 1em;
+    max-width: 100%;
+}
+.clients > div > .display465 {
+    display: none;
+    box-shadow: none;
 }
 
 .clients > div > h5 {
-    font-size: 2vw;
+    font-size: 1.15em;
+    font-weight: bold;
     margin: 2% 0 0 0;
 }
 .clients > div > p {
-    font-size: 1.25vw;
+    font-size: .9em;
     margin: 5% 0;
 }
 
@@ -453,6 +466,13 @@ ul > h4 {
     flex: 1 1 25%;
     font-size: 1.5em;
 }
+.clients > div {
+    display: block;
+}
+.clients > div > img {
+    float: none;
+}
+
 }
 
 @media screen and (max-width: 776px) {
@@ -517,8 +537,6 @@ ul > h4 {
     .find-us-content > iframe {
         display: block;
         padding: 0 5%;
-        /*text-align: center;
-        margin: 0 0 0 5%;*/
         width: 90%;
     }
     .title {
@@ -526,6 +544,20 @@ ul > h4 {
     }
     .big-line {
         flex: 1 1 40%;
+    }
+    .my-info > img {
+        display: none;
+    }
+
+    .my-info > .display766 {
+        display: block;
+    }
+    .clients > div > p {
+        display: none;
+    }
+    .clients > div > h5 {
+        margin-bottom: 5%;
+        font-size: 1.5em;
     }
 
 /*  resume page  */
@@ -587,6 +619,24 @@ ul > h4 {
     }
     .title {
         flex: 1 1 60%;
+    }
+
+    .clients > div {
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .clients > div > h5 {
+        margin-bottom: 5%;
+        font-size: 1em;
+    }
+    .clients > div > .display465 {
+        display: block;
+        text-align: center;
+        margin: 2% auto;
+    }
+    .clients > div > img {
+        display: none;
     }
 
 /*  resume page  */
