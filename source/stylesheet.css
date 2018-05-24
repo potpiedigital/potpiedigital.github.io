@@ -18,7 +18,7 @@ p, a, li {
 }
 
 p {
-    font-size: 1.5vw;
+    font-size: 1.15em;
 }
 
 h2 {
@@ -119,6 +119,10 @@ section {
     margin: 0 auto;
 }
 
+.family-man > p {
+    margin-top: 0;
+}
+
 .line-break {
     display: flex;
     align-items: center;
@@ -137,18 +141,18 @@ hr {
 }
 
 .big-line {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 .small-line {
-    flex-basis: 20%;
+    flex-basis: 10%;
 }
 
 .title {
-    flex-basis: 30%;
+    flex-basis: 20%;
     text-transform: uppercase;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -204,7 +208,6 @@ hr {
 .clients > div {
     flex: 0 0 44%;
     margin: 2% 5% 5% 1%;
-    /*background-color: pink;*/
 }
 
 .clients > div > img {
@@ -320,7 +323,7 @@ hr {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1em;
     border: 1px solid #000000;
     padding: .5vw;
 }
@@ -337,6 +340,11 @@ hr {
 
 .find-us-content > iframe {
     flex-basis: 60%;
+}
+
+.location > a {
+    text-decoration: none;
+    color: #000000;
 }
 
 footer {
@@ -444,7 +452,51 @@ ul > h4 {
     .call-to-action > a {
         font-size: 1em;
     }
+    .about-me {
+        width: 90%;
+    }
 
+    .my-info {
+        display: block;
+    }
+
+    .family-man > p {
+        margin-top: 2%;
+    }
+
+    .find-us > .line-break > .big-line {
+        flex-basis: 40%
+    }
+    .find-us > .line-break > .title{
+        flex-basis: 60%;
+    }
+    .find-us-content {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .find-us-content > div {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        align-items: flex-start;
+        margin-bottom: 5%;
+    }
+    .find-us-content > div > p {
+        flex: 0 0 50%;
+        margin-top: 0;
+    }
+
+    .find-us-content > iframe {
+        display: block;
+        padding: 0 5%;
+        /*text-align: center;
+        margin: 0 0 0 5%;*/
+        width: 90%;
+    }
+
+
+/*  resume page  */
     .basic-bio,
     .tech,
     .web-projects,
@@ -486,14 +538,16 @@ ul > h4 {
 }
 
 @media screen and (max-width: 465px) {
-        .basic-bio,
-        .tech,
-        .web-projects,
-        .hobbies {
-            width: 98%;
-        }
-        ul > h4 {
-        font-size: 1em;
+
+/*  resume page  */
+    .basic-bio,
+    .tech,
+    .web-projects,
+    .hobbies {
+        width: 98%;
+    }
+    ul > h4 {
+    font-size: 1em;
     }
     .basic-bio {
         display: block;
