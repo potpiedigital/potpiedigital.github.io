@@ -65,7 +65,7 @@ header > a {
 
 nav {
     width: 80%;
-    margin: 0 auto;
+    margin: 2% auto 0;
 }
 
 nav > ul {
@@ -77,7 +77,12 @@ nav > ul {
 li > a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 2em;
+}
+
+li > a > img {
+    width: 50%;
+    height: auto;
 }
 
 li > a:hover {
@@ -95,7 +100,7 @@ li > a:hover {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     border: 1px solid #ffffff;
     padding: .5vw;
 }
@@ -425,6 +430,24 @@ ul > h4 {
 }
 
 @media screen and (max-width: 776px) {
+    li > a {
+        font-size: 1em;
+    }
+    .call-to-action {
+        justify-content: space-between;
+        width: 40%;
+    }
+    .call-to-action > a {
+        font-size: 1em;
+    }
+
+    .basic-bio,
+    .tech,
+    .web-projects,
+    .hobbies {
+        width: 90%;
+        }
+
     .tech,
     .hobbies,
     .web-projects {
@@ -449,10 +472,58 @@ ul > h4 {
         display: inline;
         margin: 1% 2%;
     }
+    .basic-bio > div > p,
+    .web-projects > div > p {
+        font-size: 1.15em;
+        margin-top: 0;
+    }
+    .basic-bio > div > p:nth-child(2) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 465px) {
+        .basic-bio,
+        .tech,
+        .web-projects,
+        .hobbies {
+            width: 98%;
+        }
+        ul > h4 {
+        font-size: 1em;
+    }
+    .basic-bio {
+        display: block;
+    }
+    .basic-bio > img {
+        margin-left: 10%;
+    }
 
+    .tech > .nerd-stuff {
+        display: block;
+    }
+
+    .tech > .nerd-stuff > ul {
+        margin: 5% auto;
+    }
+
+    .tech > .nerd-stuff > ul > li {
+        display: inline-block;
+    }
+    .tech > .nerd-stuff > ul > h4 {
+        display: block;
+        margin: 1% auto;
+        width: 100%;
+    }
+    /*footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    footer > nav > ul {
+        display: block;
+        text-align: left;
+    }*/
 }
 
 
