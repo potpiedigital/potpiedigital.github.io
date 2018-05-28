@@ -27,10 +27,12 @@ main {
   display: flex;
 }
 
-/*header {
+/*
+header {
     margin: 0 auto;
     text-align: center;
-}*/
+}
+*/
 
 header {
   background-image: url('./assets/header_bacground.png');
@@ -44,20 +46,20 @@ nav > ul {
   justify-content: space-around;
 }
 
+a {
+  color: $color-black;
+  display: block;
+  text-decoration: none;
+}
+
 li > a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
 li > a:hover {
   color: #e70a0a;
   text-decoration: underline;
-}
-
-a {
-  color: $color-black;
-  display: block;
-  text-decoration: none;
 }
 
 h1,
