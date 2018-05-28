@@ -3,27 +3,31 @@ import webpack from 'webpack';
 
 import base from './base.babel';
 
-export default mergeWith(base, {
+export default mergeWith(
+  base,
+  {
     devtool: '#source-map',
 
     output: {
-        path: './public',
+      path: './public',
     },
 
     plugins: [
-        new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.OccurenceOrderPlugin(true),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-            },
-            output: {
-                comments: false,
-            },
-        }),
+      new webpack.optimize.DedupePlugin(),
+      new webpack.optimize.OccurenceOrderPlugin(true),
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false,
+        },
+        output: {
+          comments: false,
+        },
+      }),
     ],
-}, function(a, b) {
+  },
+  function(a, b) {
     if (isArray(a)) {
-        return a.concat(b);
+      return a.concat(b);
     }
-});
+  },
+);
