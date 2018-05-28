@@ -2,6 +2,11 @@
   "name": "potpiedigital.github.io",
   "version": "1.0.0",
   "description": "Pot Pie Digital",
+  "engines": {
+    "yarn": "1.7.0",
+    "node": "8.11.2",
+    "npm": "6.1.0"
+  },
   "scripts": {
     "build": "parcel build \"source/**/*.html\" --out-dir ./public --public-url ./",
     "clean": "rm -rf deploy/ public/",

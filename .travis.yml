@@ -17,10 +17,11 @@ before_deploy:
   - yarn build
 deploy:
   provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
   on:
     branch: develop
-  github_token: $GITHUB_TOKEN
-  allow_empty_commit: true
-  keep_history: true
-  skip_cleanup: true
-  local_dir: public/
+  target-branch: master
+  allow-empty-commit: true
+  local-dir: public/
