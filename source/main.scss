@@ -11,20 +11,20 @@ $line-height-h: 1.1;
 html,
 body,
 main {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    background-color: $background-color;
-    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-        Helvetica, Arial, 'Lucida Grande', sans-serif;
-    margin: 0;
+  background-color: $background-color;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
+    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  margin: 0;
 }
 
 main {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 
 /*header {
@@ -33,73 +33,73 @@ main {
 }*/
 
 header {
-    background-image: url('./assets/header_bacground.png');
-    height: auto;
-    overflow: hidden;
+  background-image: url('./assets/header_bacground.png');
+  height: auto;
+  overflow: hidden;
 }
 
 nav > ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 }
 
 li > a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 li > a:hover {
-    color: #e70a0a;
-    text-decoration: underline;
+  color: #e70a0a;
+  text-decoration: underline;
 }
 
 a {
-    color: $color-black;
-    display: block;
-    text-decoration: none;
+  color: $color-black;
+  display: block;
+  text-decoration: none;
 }
 
 h1,
 h2 {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    font-size: $font-size-h1;
-    line-height: $line-height-h;
+  font-size: $font-size-h1;
+  line-height: $line-height-h;
 
-    > b,
-    > i {
-        display: inline-block;
+  > b,
+  > i {
+    display: inline-block;
 
-        &:hover {
-            transform: scale(1.35);
-            z-index: 1;
-        }
+    &:hover {
+      transform: scale(1.35);
+      z-index: 1;
     }
+  }
 }
 
 %underline {
-    position: relative;
-    text-shadow: 0.05em 0 0 $background-color, -0.05em 0 0 $background-color;
+  position: relative;
+  text-shadow: 0.05em 0 0 $background-color, -0.05em 0 0 $background-color;
 
-    &:hover::before {
-        border-bottom: 2px solid $color-black;
-        content: '';
+  &:hover::before {
+    border-bottom: 2px solid $color-black;
+    content: '';
 
-        position: absolute;
-        bottom: 3%;
-        left: 0.05em;
-        right: 0.05em;
+    position: absolute;
+    bottom: 3%;
+    left: 0.05em;
+    right: 0.05em;
 
-        z-index: -1;
-    }
+    z-index: -1;
+  }
 }
 
 h2 {
-    font-size: $font-size-h2;
-    line-height: $line-height-h;
+  font-size: $font-size-h2;
+  line-height: $line-height-h;
 
-    @extend %underline;
+  @extend %underline;
 }
