@@ -9,11 +9,19 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Alegreya', serif;
 }
 
-p, a, li, address {
+p,
+a,
+li,
+address {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -28,12 +36,12 @@ h2 {
 }
 
 h4 {
-   font-size: 1.5em;
-   margin: 0;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 header {
-    background-image: url("./assets/header_bacground.png");
+    background-image: url('./assets/header_bacground.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +51,8 @@ header {
     overflow: hidden;
 }
 
-header > h1, .slogan {
+header > h1,
+.slogan {
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -86,7 +95,7 @@ li > a > img {
 }
 
 li > a:hover {
-    text-decoration: underline #E70A0A;
+    text-decoration: underline #e70a0a;
 }
 
 .call-to-action {
@@ -102,12 +111,12 @@ li > a:hover {
     text-transform: uppercase;
     font-size: 1.5em;
     border: 1px solid #ffffff;
-    padding: .5vw;
+    padding: 0.5vw;
 }
 
 .call-to-action > a:hover {
-    background-color: #E70A0A;
-    border-color: #E70A0A;
+    background-color: #e70a0a;
+    border-color: #e70a0a;
 }
 
 section {
@@ -136,7 +145,7 @@ hr {
 .big-line,
 .small-line {
     height: 10px;
-    background-color: #E70A0A;
+    background-color: #e70a0a;
     border: 0 none;
 }
 
@@ -169,7 +178,7 @@ hr {
     box-shadow: 1px 2px 4px #000000;
 }
 
-.my-info > .display766{
+.my-info > .display766 {
     display: none;
     width: 100%;
     height: 20vw;
@@ -177,13 +186,13 @@ hr {
 }
 
 .my-info > p {
-    flex-basis: 60%
+    flex-basis: 60%;
     margin: 0;
 }
 
 .why-ppd {
     width: 100%;
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
     margin: 5% 0;
     padding-bottom: 5%;
     overflow: hidden;
@@ -234,11 +243,11 @@ hr {
     margin: 2% 0 0 0;
 }
 .clients > div > p {
-    font-size: .9em;
+    font-size: 0.9em;
     margin: 5% 0;
 }
 
-  /*transition code */
+/*transition code */
 
 /*.card {
     float: left;
@@ -316,11 +325,11 @@ hr {
     border-color: #E70A0A;
 }*/
 
- /*end transition code*/
+/*end transition code*/
 
 .email-me {
     width: 100%;
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
     margin: 5% 0;
     padding-bottom: 5%;
 }
@@ -338,7 +347,7 @@ hr {
     text-transform: uppercase;
     font-size: 1em;
     border: 1px solid #000000;
-    padding: .5vw;
+    padding: 0.5vw;
 }
 
 .find-us-content {
@@ -361,7 +370,7 @@ hr {
 }
 
 footer {
-    background-image: url("./assets/grey-yooper.png");
+    background-image: url('./assets/grey-yooper.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -454,25 +463,24 @@ ul > h4 {
 }
 
 @media screen and (max-width: 1060px) {
-.big-line {
-    flex: 1 1 55%;
-}
+    .big-line {
+        flex: 1 1 55%;
+    }
 
-.small-line {
-    flex: 1 1 10%;
-}
+    .small-line {
+        flex: 1 1 10%;
+    }
 
-.title {
-    flex: 1 1 25%;
-    font-size: 1.5em;
-}
-.clients > div {
-    display: block;
-}
-.clients > div > img {
-    float: none;
-}
-
+    .title {
+        flex: 1 1 25%;
+        font-size: 1.5em;
+    }
+    .clients > div {
+        display: block;
+    }
+    .clients > div > img {
+        float: none;
+    }
 }
 
 @media screen and (max-width: 776px) {
@@ -514,7 +522,7 @@ ul > h4 {
     }
 
     .why-ppd > div > h4,
-    .email-me > div > h4  {
+    .email-me > div > h4 {
         font-size: 1.5em;
     }
     .find-us-content {
@@ -560,13 +568,13 @@ ul > h4 {
         font-size: 1.5em;
     }
 
-/*  resume page  */
+    /*  resume page  */
     .basic-bio,
     .tech,
     .web-projects,
     .hobbies {
         width: 90%;
-        }
+    }
 
     .tech,
     .hobbies,
@@ -601,7 +609,7 @@ ul > h4 {
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px) {
     .big-line,
     .small-line {
         flex: 1 1 25%;
@@ -612,7 +620,6 @@ ul > h4 {
 }
 
 @media screen and (max-width: 465px) {
-
     .big-line,
     .small-line {
         flex: 1 1 15%;
@@ -639,7 +646,7 @@ ul > h4 {
         display: none;
     }
 
-/*  resume page  */
+    /*  resume page  */
     .basic-bio,
     .tech,
     .web-projects,
@@ -647,7 +654,7 @@ ul > h4 {
         width: 98%;
     }
     ul > h4 {
-    font-size: 1em;
+        font-size: 1em;
     }
     .basic-bio {
         display: block;
@@ -673,19 +680,3 @@ ul > h4 {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
