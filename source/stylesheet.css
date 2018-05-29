@@ -565,9 +565,6 @@ ul > h4 {
   .web-projects > div > p {
     font-size: 1.15em;
   }
-  .basic-bio > div > p:nth-child(2) {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 550px) {
