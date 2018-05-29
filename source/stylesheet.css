@@ -133,6 +133,10 @@ section {
   margin-top: 0;
 }
 
+.family-man > p > a {
+  color: #000000;
+}
+
 .line-break {
   display: flex;
   align-items: center;
@@ -179,7 +183,8 @@ hr {
   box-shadow: 1px 2px 4px #000000;
 }
 
-.my-info > .display766 {
+.my-info > .display766,
+.basic-bio > .display766 {
   display: none;
   width: 100%;
   height: 20vw;
@@ -455,10 +460,6 @@ ul > h4 {
     width: 90%;
   }
 
-  .my-info {
-    display: block;
-  }
-
   .family-man > p {
     margin-top: 2%;
   }
@@ -499,11 +500,22 @@ ul > h4 {
   .big-line {
     flex: 1 1 40%;
   }
-  .my-info > img {
+  .my-info,
+  .basic-bio {
+    display: block;
+  }
+
+  .my-info > img,
+  .basic-bio > img {
     display: none;
   }
 
-  .my-info > .display766 {
+  .basic-bio > div {
+    padding: 0 5%;
+  }
+
+  .my-info > .display766,
+  .basic-bio > .display766 {
     display: block;
   }
   .clients > div > p {
@@ -605,9 +617,9 @@ ul > h4 {
   .basic-bio {
     display: block;
   }
-  .basic-bio > img {
+  /*.basic-bio > img {
     margin-left: 10%;
-  }
+  }*/
 
   .tech > .nerd-stuff {
     display: block;
