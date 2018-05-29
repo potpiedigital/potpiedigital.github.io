@@ -411,6 +411,15 @@ ul > h4 {
 .web-projects > div {
   flex: 1 0 80%;
 }
+@media screen and (max-width: 1185px) {
+  .clients > div {
+    display: block;
+    text-align: center;
+  }
+  .clients > div > img {
+    float: none;
+  }
+}
 
 @media screen and (max-width: 1060px) {
   .big-line {
@@ -424,12 +433,6 @@ ul > h4 {
   .title {
     flex: 1 1 25%;
     font-size: 1.5em;
-  }
-  .clients > div {
-    display: block;
-  }
-  .clients > div > img {
-    float: none;
   }
 }
 
@@ -617,9 +620,6 @@ ul > h4 {
   .basic-bio {
     display: block;
   }
-  /*.basic-bio > img {
-    margin-left: 10%;
-  }*/
 
   .tech > .nerd-stuff {
     display: block;
