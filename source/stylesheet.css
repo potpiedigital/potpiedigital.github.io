@@ -115,9 +115,11 @@ li > a:hover {
   padding: 0.5vw;
 }
 
-.call-to-action > a:hover {
+.call-to-action > a:hover,
+.black-button:hover {
   background-color: #e70a0a;
   border-color: #e70a0a;
+  color: #ffffff;
 }
 
 section {
