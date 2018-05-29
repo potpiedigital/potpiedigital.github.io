@@ -194,8 +194,6 @@ hr {
   width: 90%;
   display: flex;
   padding: 0 5%;
-  /*margin: 5% 0;*/
-  /*padding-bottom: 5%;*/
 }
 
 .kind-words {
@@ -211,11 +209,12 @@ hr {
 .testimonial {
   display: flex;
   background-color: #e8e8e8;
+  border-radius: 20px;
   flex-direction: column;
   align-items: center;
   width: 25%;
   margin: 5% auto;
-  padding: 0 2%;
+  padding: 2%;
 }
 
 .testimonial > img {
@@ -226,7 +225,9 @@ hr {
   border: 2px solid #e70a0a;
 }
 .testimonial > h5 {
-  margin-top: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
 }
 
 .testimonial > p {
@@ -508,6 +509,18 @@ ul > h4 {
   }
 }
 
+@media screen and (max-width: 847px) {
+  .why-ppd {
+    display: block;
+  }
+  .testimonial {
+    width: 80%;
+  }
+  .testimonial > img {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 776px) {
   li > a {
     font-size: 1em;
@@ -530,23 +543,12 @@ ul > h4 {
   .family-man > p {
     margin-top: 2%;
   }
-  .why-ppd {
-    display: block;
-  }
-  .why-ppd > div {
-    margin: 3% auto 5%;
-  }
-  .why-ppd > div:nth-child(2) {
-    margin: 3% auto 0;
-  }
-  .why-ppd > div,
-  .why-ppd > div:nth-child(2),
+
   .email-me > div {
     float: none;
     width: 80%;
   }
 
-  .why-ppd > div > h4,
   .email-me > div > h4 {
     font-size: 1.5em;
   }
