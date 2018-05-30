@@ -99,7 +99,8 @@ li > a > img {
   height: auto;
 }
 
-li > a:hover {
+li > a:hover,
+li > a:focus {
   text-decoration: underline #e70a0a;
 }
 
@@ -322,33 +323,47 @@ hr {
 }
 
 footer {
-  background-image: url('./assets/grey-yooper.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #e8e8e8;
   height: auto;
   width: 100%;
   text-align: center;
-  overflow: hidden;
+  margin-top: 15%;
 }
 
-footer > ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-  padding: 0;
+footer > hr {
+  width: 70%;
+  text-align: center;
+  margin: 1% auto;
+  background-color: #e70a0a;
+  height: 2px;
+  border: none;
+}
+
+footer > img {
+  margin-top: -5%;
 }
 
 footer > p {
-  color: #ffffff;
+  padding-bottom: 5%;
 }
 
-footer > nav {
-  margin-bottom: 5%;
+.foot-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 70%;
+  margin: 3% auto;
+}
+
+.footer-menu {
+  text-align: left;
+}
+
+.footer-menu > ul > li,
+.footer-menu > ul > li > a {
+  color: #000000;
+  font-size: 1em;
+  margin-bottom: 1vw;
 }
 
 /*  resume page  */
@@ -569,6 +584,20 @@ ul > h4 {
   }
 }
 
+@media screen and (max-width: 670px) {
+  .foot-nav {
+    width: 98%;
+  }
+
+  footer > p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer > img {
+    margin-top: -10%;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .big-line,
   .small-line {
@@ -635,5 +664,22 @@ ul > h4 {
     display: block;
     margin: 1% auto;
     width: 100%;
+  }
+
+  footer {
+    margin-top: 25%;
+  }
+  footer > img {
+    margin-top: -15%;
+  }
+
+  .foot-nav {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-menu {
+    width: 35%;
+    margin-bottom: 5%;
   }
 }
