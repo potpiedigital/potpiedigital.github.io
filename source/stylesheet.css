@@ -90,6 +90,10 @@ li > a {
   font-size: 2em;
 }
 
+li > a:active {
+  transition: all 5s ease-out;
+}
+
 li > a > img {
   width: 50%;
   height: auto;
