@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - lts/*
+  - 8.11.2
 before_install:
   - YARN_VERSION=`node -pe "require('./package.json').engines.yarn"`
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version $YARN_VERSION
@@ -14,6 +14,7 @@ env:
   global:
   - secure: L6RxKCWule4QKL1C8D5foFQFTZgZYWCnqQOeo7VUUMnPZ3OLJ1+Y1GhDNebp7iMqtioXGVyKLcBfXLlU7aAD1wzcPXd536MX0hE+TrvQEcUqp+PMXhBdZxGPu9A887JGYh3PV0PjX3L3EV67iqPRAbBXecVOkmBEADlKSHKhg310aM4HEK8xCO5WX4QD03L7oFCGGsff5UoQHiWtyMOLaGe3PzRuc6UJ/y7wrj3FUd5yoDzCk02CyVCWQzv5RxzcUc6bB3RIJYJHLcv5ue6CIdsuOMnO9qUEsWtnBza1xmHGQ5uJeegOYco5OlszCPCpTqOChYP9Bm2D+tU+vntBZ+3X3kmw69LP8X1cn/ee5MgmKEfnId/j3t5OduVP1ePMZt2HY+pQ1ioaxMyiOXa6lzqBqcwfuAsFaiYW1orYz82aS+UhPtgqTOZXJXH7EH6Z46dGj65tvcfRquMQcnRNJsCXDJgzNA0uXOkguJ22A+ptm82Ivk3sqON36lAzeQDi3Mc3ZwkqWTb/dd0XPPvPDYKGYJeUVYoDRrUDkWs8Dr1JweayNGbyF9PLh5DmwTspCs1LjXlvOEaglV2vj4lAuQ89qTAgU69ZOKAbZEBwGGCIvsVuAXLCbQ8izdfjb0eQmhG7lBW5MB8NxmvwKqeuLg123EzAq94ZloPBDXRsVgM=
 before_deploy:
+  - yarn clean
   - yarn build
 deploy:
   provider: pages

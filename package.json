@@ -10,12 +10,10 @@
   "scripts": {
     "build": "parcel build \"source/**/*.html\" --out-dir ./public --public-url ./",
     "clean": "rm -rf deploy/ public/",
-    "deploy": "bash ./deploy.sh",
-    "predeploy": "npm run clean && npm run build",
-    "start": "parcel \"source/**/*.html\" --out-dir ./public",
+    "lint": "yarn lint:es ; yarn lint:style",
     "lint:es": "eslint --cache \"source/**/*.js\"",
     "lint:style": "stylelint --cache \"source/**/*.{s,}css\"",
-    "lint": "yarn lint:es ; yarn lint:style",
+    "start": "parcel \"source/**/*.html\" --out-dir ./public",
     "test": "jest"
   },
   "repository": {
@@ -47,10 +45,10 @@
     "eslint": "4.19.1",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.6.0",
-    "jest": "23.0.1",
+    "jest": "23.1.0",
     "node-sass": "4.9.0",
     "parcel-bundler": "1.8.1",
-    "prettier": "1.13.0",
+    "prettier": "1.13.4",
     "stylelint": "9.2.1",
     "stylelint-config-prettier": "3.2.0",
     "stylelint-config-recommended-scss": "3.2.0",
