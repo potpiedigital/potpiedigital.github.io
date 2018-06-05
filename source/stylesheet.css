@@ -42,14 +42,13 @@ h4 {
 }
 
 header {
-  background-image: url('./assets/header_bacground.png');
+  background-image: url('./assets/header_background.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
   width: 100%;
   text-align: center;
-  overflow: hidden;
 }
 
 header > h1,
@@ -75,7 +74,8 @@ header > a {
 
 nav {
   width: 80%;
-  margin: 2% auto 0;
+  margin: 0 auto;
+  padding-top: 2%;
 }
 
 nav > ul {
@@ -108,7 +108,8 @@ li > a:focus {
   display: flex;
   justify-content: space-around;
   width: 30%;
-  margin: 3vw auto;
+  margin: 2% auto;
+  padding-bottom: 2%;
 }
 
 .call-to-action > a {
