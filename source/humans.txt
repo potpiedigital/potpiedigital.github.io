@@ -4,7 +4,7 @@ Site: http://ashleysiebels.com
 Twitter: @yosiebels
 Location: San Francisco, CA
 
-Junior Developer: Mark Hayes
+Developer: Mark Hayes
 Site: /* coming soon */
 Location: Marquette, MI
 

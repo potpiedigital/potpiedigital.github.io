@@ -1,8 +1,20 @@
 {
   "root": true,
+  "extends": ["plugin:prettier/recommended"],
   "env": {
     "browser": true,
-    "es6": true,
-    "node": true
-  }
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*.js"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
