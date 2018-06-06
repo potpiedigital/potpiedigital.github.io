@@ -8,12 +8,12 @@
     "npm": "6.1.0"
   },
   "scripts": {
-    "build": "parcel build \"source/**/*.html\" --out-dir ./public --public-url ./",
+    "build": "parcel build \"source/*.{html,ico,txt}\" --out-dir ./public --public-url ./",
     "clean": "rm -rf deploy/ public/",
     "lint": "yarn lint:es ; yarn lint:style",
     "lint:es": "eslint --cache \"source/**/*.js\"",
     "lint:style": "stylelint --cache \"source/**/*.{s,}css\"",
-    "start": "parcel \"source/**/*.html\" --out-dir ./public",
+    "start": "parcel \"source/*.{html,ico,txt}\" --out-dir ./public",
     "test": "jest"
   },
   "repository": {
